@@ -1,7 +1,7 @@
 /*
  * Name: Daniel Baez-Perez
  * Date: May 9, 2026
- * Assignment: SDC330 Project Phase #1
+ * Assignment: SDC330 Project Phase #2
  * Purpose: Represents the owner of a vehicle.
  */
 
@@ -14,6 +14,7 @@ public class Owner {
         this.phoneNumber = phoneNumber;
     }
 
+    @Override
     public String toString() {
         return "Owner Name: " + name + "\nPhone Number: " + phoneNumber;
     }

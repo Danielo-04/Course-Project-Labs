@@ -1,11 +1,11 @@
 /*
  * Name: Daniel Baez-Perez
  * Date: May 9, 2026
- * Assignment: SDC330 Project Phase #1
- * Purpose: Base class that stores general vehicle information.
+ * Assignment: SDC330 Project Phase #2
+ * Purpose: Base class for vehicle information.
  */
 
-public class Vehicle {
+public class Vehicle implements Displayable {
     private String make;
     private String model;
     private int year;
@@ -20,7 +20,13 @@ public class Vehicle {
         this.owner = owner;
     }
 
-    public String toString() {
+    @Override
+    public String getDisplayInfo() {
         return "Vehicle: " + year + " " + make + " " + model + "\n" + owner;
+    }
+
+    @Override
+    public String toString() {
+        return getDisplayInfo();
     }
 }
