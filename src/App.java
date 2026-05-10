@@ -1,37 +1,40 @@
 /*
  * Name: Daniel Baez-Perez
  * Date: May 9, 2026
- * Assignment: SDC330 Project Phase #3
- * Purpose: Main application demonstrating abstraction, constructors, and access specifiers.
+ * Assignment: SDC330 Project Phase #4
+ * Purpose: Main application demonstrating SQLite database CRUD operations.
  */
 
 public class App {
     public static void main(String[] args) {
-        System.out.println("Daniel Baez-Perez - Project Week 3");
+        System.out.println("Daniel Baez-Perez - Project Week 4");
         System.out.println("Vehicle Service Tracker");
         System.out.println();
 
         System.out.println("Welcome to the Vehicle Service Tracker!");
-        System.out.println("This application demonstrates abstraction, constructors, and access specifiers.");
+        System.out.println("This application stores vehicle service data in a SQLite database.");
+        System.out.println("The program demonstrates Create, Read, Update, and Delete operations.");
         System.out.println();
 
-        Owner owner1 = new Owner("Alex Morgan", "555-123-4567");
-        ServiceRecord service1 = new ServiceRecord("Brake Inspection", "05/09/2026");
+        VehicleDatabase database = new VehicleDatabase();
 
-        Car car1 = new Car("Honda", "Accord", 2021, owner1, 4, service1);
+        // CREATE
+        database.addVehicle("Alex Morgan", "Honda", "Accord", 2021, "Brake Inspection", "05/09/2026");
+        database.addVehicle("Jordan Lee", "Toyota", "Camry", 2020, "Oil Change", "05/10/2026");
 
-        // Polymorphism from Week 2 still works
-        Displayable item = car1;
+        // READ
+        database.displayVehicles();
 
-        System.out.println("Stored Vehicle Information:");
-        System.out.println("---------------------------");
-        System.out.println(item.getDisplayInfo());
+        // UPDATE
+        database.updateServiceType(1, "Tire Rotation");
 
-        System.out.println();
-        System.out.println("Default Constructor Example:");
-        System.out.println("----------------------------");
+        // READ after update
+        database.displayVehicles();
 
-        Car defaultCar = new Car();
-        System.out.println(defaultCar.getDisplayInfo());
+        // DELETE
+        database.deleteVehicle(2);
+
+        // READ after delete
+        database.displayVehicles();
     }
 }
