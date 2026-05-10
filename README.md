@@ -1,18 +1,27 @@
-## Getting Started
+<<<<<<< HEAD
+# Vehicle Service Tracker
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+A Java console application that demonstrates inheritance and composition.
 
-## Folder Structure
+## Classes Included
 
-The workspace contains two folders by default, where:
+- Vehicle (base class)
+- Car (derived class)
+- Owner
+- ServiceRecord
+- App
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## Concepts Demonstrated
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+- Inheritance
+- Composition
+- Constructors
+- Object instantiation
+- Console output
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+## Project Summary
 
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+This application is the first phase of a Vehicle Service Tracker project. It stores
+vehicle information, owner details, and service records. The program demonstrates
+object-oriented programming concepts including inheritance and composition.
+>>>>>>> 15db3012d82af46ae379d79655fb2ed6ae1ded0b
