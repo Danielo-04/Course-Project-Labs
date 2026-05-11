@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Vehicle Service Tracker
 
 Vehicle Service Tracker is a Java console application that manages vehicle service records. The application allows vehicle information and service data to be stored, displayed, updated, and deleted using a SQLite database.
@@ -42,4 +41,3 @@ YouTube demo video link:
 ## Project Summary
 
 The Vehicle Service Tracker is a Java console application designed to help users manage vehicle maintenance information. The program stores realistic vehicle records in a SQLite database and demonstrates full CRUD functionality by adding, reading, updating, and deleting service records. This project also demonstrates important object-oriented programming concepts including inheritance, composition, interfaces, polymorphism, abstraction, constructors, and access specifiers. The final application combines the design and user interaction planning from earlier phases into one complete and maintainable project.
->>>>>>> 15db3012d82af46ae379d79655fb2ed6ae1ded0b
